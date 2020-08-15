@@ -39,7 +39,7 @@ class MainApp(App):
     Label:
         text: "네트워크 에러!"
         font_name: '{font_path}'
-        font_size: '50sp'
+        font_size: '40sp'
 
 <CoverImage@CoverBehavior+Image>:
     reference_size: self.texture_size
@@ -57,30 +57,34 @@ class MainApp(App):
     CoverImage:
         source: 'image/background.jpg'
     BoxLayout:
-        size_hint: 1, .4
-        pos: {pos}
-
         orientation:"vertical"
-        Label:
-            text: "한강수온"
-            font_name: '{font_path}'
-            font_size: '60sp'
-        Label:
-            text: "{tempdate} {temptime}에 측정함"
-            font_name: '{font_path}'
-            font_size: '20sp'
-        Label:
-            text: "{temp}"
-            font_name: '{font_path}'
-            font_size: '40sp'
-    Button:
-        text: "Made by 천상의나무 and Winsub"
-        font_name: '{font_path}'
-        size_hint: 1, .1
-        font_size: '15sp'
-        background_normal: 'image/button.png'
-        background_down: 'image/button.png'
-        on_release: app.opensite()
+        FloatLayout:
+            size_hint: 1, .2
+        BoxLayout:
+            size_hint: 1, .5
+            orientation:"vertical"
+            Label:
+                text: "한강수온"
+                font_name: '{font_path}'
+                font_size: '50sp'
+            Label:
+                text: "{tempdate} {temptime}에 측정함"
+                font_name: '{font_path}'
+                font_size: '20sp'
+            Label:
+                text: "{temp}"
+                font_name: '{font_path}'
+                font_size: '30sp'
+        FloatLayout:
+            orientation:"vertical"
+            Button:
+                text: "Made by 천상의나무 for Winsub"
+                font_name: '{font_path}'
+                size_hint: 1, .1
+                font_size: '15sp'
+                background_normal: 'image/button.png'
+                background_down: 'image/button.png'
+                on_release: app.opensite()
 
 <CoverImage@CoverBehavior+Image>:
     reference_size: self.texture_size
@@ -109,11 +113,5 @@ if __name__ == '__main__':
 
     # Link
     HanGang = 'https://hangang.life/api/'
-
-    # Set pos 
-    if kivy.utils.platform == "android":
-        pos = "0, 1000"
-    else:
-        pos = "0, 300"
 
     MainApp().run()
