@@ -98,7 +98,7 @@ class MainApp(App):
 if __name__ == '__main__':
 
     # Main program version
-    version = "1.0"
+    version = "1.1"
 
     # Set program name
     program_name = "Winsub Hangang Temperature"
