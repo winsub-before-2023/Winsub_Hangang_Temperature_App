@@ -5,7 +5,7 @@
 
 ### 설명
 
-* [한강 수온 api](https://hangang.life/api/) 를 이용한 한강 수온을 알려주는 앱입니다.
+* [Winsub 한강 수온 api](https://hangang.life/api/) 를 이용한 한강 수온을 알려주는 앱입니다.
 
 ### 스크린샷
 
