@@ -9,4 +9,4 @@
 
 ### 스크린샷
 
-![Screenshot_20200817-215422](https://github.com/winsub/Winsub_Hangang_Temperature_App/blob/master/screenshot/Screenshot_20200817-215422.jpg?raw=true)
+<img src="https://github.com/winsub/Winsub_Hangang_Temperature_App/blob/master/screenshot/Screenshot_20200817-215422.jpg?raw=true" width="200"></img>
