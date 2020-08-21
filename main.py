@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import kivy
-kivy.require('1.9.1')
+kivy.require('1.11.1')
 
 from kivy.core.window import Window
 from kivy.uix.widget import Widget
