@@ -25,11 +25,11 @@ from bs4 import BeautifulSoup
 import requests
 import webbrowser
 
-class InternetError():
+class InternetError(FloatLayout):
     pass
 
 # Internet error
-class InternetErrorApp():
+class InternetErrorApp(App):
     def build(self):
         Builder.load_string(f"""
 <InternetError>
@@ -43,7 +43,7 @@ class InternetErrorApp():
 <CoverImage@CoverBehavior+Image>:
     reference_size: self.texture_size
  """)
-        return InternetError
+        return InternetError()
 
 # Main app
 class Main(FloatLayout):
